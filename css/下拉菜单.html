@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下拉菜单</title>
+
+    <style>
+        body{
+            background:url(images/146512819627.jpg) no-repeat;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            var sele=document.getElementById("sele");
+            sele.onchange=function(){
+                switch(this.value){
+                case "1":
+                    document.body.style.backgroundImage="url(images/146512819627.jpg)";
+                        break;
+                    case "2":
+                        document.body.style.backgroundImage="url(images/1464249947924.jpg)";
+                        break;
+                    case "3":
+                        document.body.style.backgroundImage="url(images/t010c80d149995c2acf.jpg)";
+                        break;
+                    case "4":
+                        document.body.style.backgroundImage="url(images/t012896c2e70c2ffeba.jpg)";
+                        break;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+<select name="" id="sele">
+    <option value="1">微风吹拂海浪</option>
+    <option value="2">乌云密布</option>
+    <option value="3">金黄色的菊花</option>
+    <option value="4">蓝色海岸</option>
+</select>
+        
+
+</body>
+</html>
